@@ -54,12 +54,6 @@ namespace CommandDesignPattern05
             foreach (var comando in comandos)
                 comando();
         }
-
-        public static void DesfazerComandos(IEnumerable<Action> comandos)
-        {
-            foreach (var comando in comandos)
-                comando();
-        }
     }
 
     public static class EletricaCommand
